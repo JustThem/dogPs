@@ -1,0 +1,9 @@
+<!--miniprogram/pages/admin/admin.wxml-->
+<view>
+
+  <view class='admin'>
+    <input type='number' data-name='apiNum' bindinput='onInput' placeholder='输入剩余API数量' value='{{apiNum}}'></input>
+    <input bindinput='onInput' data-name='apiKey' placeholder='输入API-KEY' value='{{apiKey}}'></input>
+    <button bindtap='onSubmit'>提交</button>
+  </view>
+</view>

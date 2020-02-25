@@ -1,0 +1,58 @@
+<view>
+  <button class="userinfo" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    <view class='left-user'>
+      <block wx:if="{{!hasUserInfo && canIUse}}">
+        <image src='{{showImg}}' mode='cover' class="userinfo-avatar"></image>
+        <button class='userinfo-nickname'>微信账户登录</button>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <button class="userinfo-nickname user-color">{{userInfo.nickName}}</button>
+      </block>
+    </view>
+  </button>
+  <view class='fun-but'>
+    <view class='item-but' bindtap='onAlbum'>
+    <view><image src='../../style/record.png'></image></view>
+    <view>合成记录</view>
+    
+    </view>
+    <view>2</view>
+  </view>
+  <view class='lu-an'>
+    <view class='item' wx:for='{{luList}}' wx:index='index' wx:key='{{index}}'>
+      <view class='one'>
+        <image src='../../style/{{item.icon}}.png'></image>
+        <view>{{item.name}}</view>
+      </view>
+      <view class='two'>
+        <view class='right-go'>
+          <image src='../../style/go.png'></image>
+        </view>
+      </view>
+    </view>
+    <button class='item item-button' open-type='feedback'>
+      <view class='one'>
+        <image src='../../style/suggest.png'></image>
+        <view>反馈建议</view>
+      </view>
+      <view class='two'>
+        <view class='right-go'>
+          <image src='../../style/go.png'></image>
+        </view>
+      </view>
+    </button>
+    <!--  -->
+    <view class='item' wx:if='{{isAdmin}}' bindtap='onAdminKey'>
+      <view class='one'>
+        <image src='../../style/admin.png'></image>
+        <view>管理-Key</view>
+      </view>
+      <view class='two'>
+        <view class='right-go'>
+          <image src='../../style/go.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

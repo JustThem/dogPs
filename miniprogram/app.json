@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myinfo/myinfo",
+    "pages/admin/admin",
+    "pages/album/album"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "狗头抠图",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor": "#E7685F",
+    "color": "#515151",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "抠图",
+        "iconPath": "./style/dog.png",
+        "selectedIconPath": "./style/dogSelected.png"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "text": "狗头",
+        "iconPath": "./style/my.png",
+        "selectedIconPath": "./style/mySelected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

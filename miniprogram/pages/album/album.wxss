@@ -1,0 +1,22 @@
+/* miniprogram/pages/album/album.wxss */
+
+.album{
+  background-color: #f8f8f8;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+}
+.item{
+  width: 30%;
+  height: 20vh;
+  border-radius: 5px;
+  background-color: #000;
+  margin: 5px 1.66%;
+}
+.item image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,23 @@
+/* miniprogram/pages/admin/admin.wxss */
+.admin{
+  height: 70vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+input{
+  height: 11vh;
+  border: 1px solid #999;
+  border-radius: 10px;
+  width: 80%;
+}
+button{
+  background-color: #E7685F;
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 15px;
+}

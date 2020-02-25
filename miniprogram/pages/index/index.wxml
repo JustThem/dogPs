@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='{{isRemove ? "background fil-back" : "background"}}'>
+    <view class='{{isRemove ? "boss fil-boss":"boss"}}'>
+      <view wx:if='{{!isShow}}' bindanimationend='onOver' class='{{isRemove ? "one" : ""}}'>
+      </view>
+      <view wx:if='{{!isShow}}' bindtap='onImage' class='{{isRemove ? "two" : ""}}'>
+        <image class='img' mode='aspectFill' src='{{showImg}}'></image>
+      </view>
+      <view wx:if='{{!isShow}}' class='{{isRemove ? "three":"isNot"}}'>
+      </view>
+    </view>
+
+    <view class='{{isShow ? "show" : "isNot"}}'>
+      <image wx:if="{{isDone}}" bindtap='onImg' data-src="{{showImg}}" class='img' mode='aspectFill' src='{{showImg}}'></image>
+    </view>
+    <!-- <view class="show">
+      <image bindtap='onImg' data-src="{{showImg}}" class='img' mode='aspectFill' src='{{showImg}}'></image>
+    </view> -->
+  </view>
+  <view class='but'>
+      <!-- <button bindtap='showNum' class='on-ing'>show Num</button> -->
+      <button wx:if="{{!isSubmit}}" class='on-ing' bindtap='onRemove'>合成</button>
+      <view wx:if="{{isSubmit}}" class='buted'>
+        <button bindtap='onSave'>保存</button>
+        <button bindtap='onBackUp'>重置</button>
+      </view>
+    </view>
+
+</view>
