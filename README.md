@@ -5,7 +5,6 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 - [remove文档](https://www.remove.bg/downloads)
-- 
 
 ## 扫码体验
 
